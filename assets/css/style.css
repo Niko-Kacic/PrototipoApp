@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --orange_1: rgb(255, 148, 1);
+    --orange_2: rgb(255, 113, 11);
+    --orange_3: rgb(255, 53, 11);
+    --white: rgb(255, 255, 255);
+}
+
+body {
+    font-family: 'Lato';
+    background-color: var(--white);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+img {
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+}
+
+h2 {
+    display: block;
+    margin: 1.5rem;
+}
+
+form {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid ;
+}
+
+button {
+    background: linear-gradient(to right, var(--orange_1), var(--orange_2), var(--orange_3));
+    color: var(--white);
+    padding: 12px;
+    margin: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%; 
+}
+
+.login_button{
+    text-decoration: none;
+    color: var(--white);
+}
+
+button:hover {
+    background-color: var(--orange_2);
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.aaa{
+    text-decoration: none;
+    color: var();
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--orange_3);
+}
+

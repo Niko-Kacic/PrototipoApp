@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/css/style_3.css">
+    <title>Fallabella Challenges</title>
+</head>
+<body>
+    <header>
+        <figure>
+            <figure class="banner">
+                <img class="banner-img" src="./assets/img/banner.jpg" alt="">
+            </figure>
+        </figure>
+    </header>    
+    <section>
+        <div class="rewards-box">
+            <div class="reward-1">
+                <hr>
+                <h4>Actividad Sorpresa</h4>
+                <button>
+                        <img src="./assets/img/correr.png" alt="">
+                </button onclick="openModal('Canjeado: Actividad Sorpresa')">
+                <div class="text">
+                    <p>Canjea este premio para sumergirte en experiencias únicas y emocionantes,
+                    desde descuentos especiales hasta accesos exclusivos.</p>
+                    <p class="reward-point">100 Falabella Rewards</p>
+                </div>
+                <hr>
+            </div>
+            <div class="reward-6">
+                <h4>Despacho Gratis</h4>
+                <button>
+                    <img src="./assets/img/camion.png" alt="">
+                </button>
+                <div class="text">
+                    <p>Experimenta la comodidad al máximo al canjear este beneficio, liberándote de los costos de envío 
+                    y garantizando una experiencia de compra sin sorpresas adicionales.</p>
+                    <p class="reward-point">150 Falabella Rewards</p>
+                </div>
+                <hr>
+            </div>
+            <div class="reward-2">
+                <h4>Adelantar Fila</h4>
+                <button>
+                    <img src="./assets/img/delantero.png" alt="">
+                </button>
+                <div class="text">
+                    <p>Evita las largas esperas con este beneficio, disfrutando de atención 
+                    inmediata para hacer tu experiencia de compra más eficiente.</p>
+                    <p class="reward-point">200 Falabella Rewards</p>
+                </div>
+                <hr>
+            </div>
+            <div class="reward-3">
+                <h4>Pagar hasta 24 cuotas <br> precio contado</h4>
+                <button>
+                    <img src="./assets/img/archivo-factura-dolar.png" alt="">
+                </button>
+                <div class="text">
+                    <p>Obtén flexibilidad financiera al distribuir el pago de tus compras en cuotas
+                     extendidas, haciendo productos de mayor valor más accesibles.</p>
+                     <p class="reward-point">300 Falabella Rewards</p>
+                </div>
+                <hr>
+            </div>
+            <div class="reward-5">
+                <h4>Multiplicador de Puntos</h4>
+                <button>
+                    <img src="./assets/img/tablero.png" alt="">
+                </button>
+                <div class="text">
+                    <p>Maximiza tus recompensas al canjear este premio, 
+                    acelerando la acumulación de puntos con cada compra para beneficios a largo plazo.</p>
+                    <p class="reward-point">350 Falabella Rewards</p>
+                </div>
+                <hr>
+            </div>
+            <div class="reward-4">
+                <h4>Cupon de Descuento</h4>
+                <button>
+                    <img src="./assets/img/donar.png" alt="">
+                </button>
+                <div class="text">
+                    <p>Este premio clásico ofrece atractivas reducciones de precio, 
+                    brindando a los clientes un ahorro instantáneo en una variedad de productos.</p>
+                    <p class="reward-point">400 Falabella Rewards</p>
+                </div>
+                <hr>
+            </div> 
+        </div>
+    </section>
+    <div id="myModal">
+        <p id="modalContent"></p>
+        <button onclick="closeModal()">Cerrar</button>
+    </div>
+    
+    <div class="overlay" onclick="closeModal()"></div>
+    
+    <script>
+       
+        function openModal(content) {
+            document.getElementById('modalContent').innerText = content;
+            document.getElementById('myModal').style.display = 'block';
+            document.querySelector('.overlay').style.display = 'block';
+        }
+    
+       
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+            document.querySelector('.overlay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

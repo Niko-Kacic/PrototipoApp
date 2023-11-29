@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style_2.css">
+    <title>Formulario de Inicio de Sesión</title>
+    
+</head>
+<body>
+    <div class="reward-section">
+        <img src="./assets/img/banner.jpg" alt="banner">
+        <div class="info_section">
+            <h2>Total de Falabella Rewards Acumulados</h2>
+            <div class="reward-points">500</div>
+            <a href="#" class="register-button">Iniciar Registro</a>
+        </div>
+        <form action="./menu_2.html" onsubmit="return validarCredenciales()">
+            
+            <h2>Falabella Rewards</h2>
+            <label for="email">Ingrese codigo del totem:</label>
+            <input type="text" id="codigo" name="email">
+        
+            <button aria-colcount="button" type="submit" class="login_button"> Ingresar</button>
+
+        </form>
+    </div>
+    <script>
+        let codigo = document.getElementById("codigo").value;
+
+        if (codigo ==="falabella") {
+            alert("Inicio de sesión exitoso");
+            return true; 
+        } else {
+            alert("Error en las credenciales");
+            return false; 
+        }
+    </script>
+
+</body>
+</html>
