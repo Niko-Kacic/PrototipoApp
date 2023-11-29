@@ -74,9 +74,10 @@ button:hover {
     margin-top: 20px;
 }
 
-.aaa{
-    text-decoration: none;
-    color: var();
+.info-span a{
+    color: var(--orange_3);
+    display: flex;
+    justify-content: center;
 }
 
 .links a {

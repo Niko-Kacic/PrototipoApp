@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        html {
+            background: linear-gradient(90deg, var(--orange_1), var(--orange_2), var(--orange_3));
+        }
+
+        :root {
+            --orange_1: rgb(255, 148, 1);
+            --orange_2: rgb(255, 113, 11);
+            --orange_3: rgb(255, 53, 11);
+            --white: rgb(255, 255, 255);
+        }
+
+        img {
+            border-radius: 8px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .boton-f{
+            display: flex;
+            justify-content: center;
+        }
+        .f{
+            background-color: var(--white); 
+            border: none;
+            width: 40%;  
+            padding: 5px;         
+            display: block;
+            border-radius: 10px;
+            box-shadow: 2px 1px 5px black;
+            color: var(--orange_2);
+        }
+
+        a{
+            text-decoration: none;
+            color: var(--orange_2);
+            width: 80%;
+            display: flex;
+            justify-content: center; 
+            color: var(--orange_2);
+        }
+
+        .cat-not-found{
+            margin-top: 5rem;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        h4,h5{
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="./assets/img/banner.jpg" alt="">
+    </div>
+    <div class="not-found">
+        <figure>
+            <img class="cat-not-found" src="./assets/img/404.avif" alt="not-found">
+        </figure>
+        <h4>Lo sentimos, no encontramos lo que estas buscando</h4>
+        <h5>Presione </h5>
+        <div class="boton-f">
+            <a href="./index.html">
+            <button class="f">
+                F
+            </button>
+            </a> 
+        </div>
+    </div>
+
+</body>
+</html>
