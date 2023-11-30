@@ -40,10 +40,7 @@
                 let password = document.getElementById("password").value;
                 let errorMessage = document.getElementById("error-message");
     
-                if (email === "admin" && password === "12345") {
-                    // Inicio de sesión exitoso para el administrador
-                    return true;
-                } else if (email === "Barbara@duoc.cl" && password === "Lucinda") {
+               if (email === "Barbara@duoc.cl" && password === "Lucinda") {
                     // Inicio de sesión exitoso para Barbara
                     return true;
                 } else if (email === "Sebastian@duoc.cl" && password === "Beidu") {
@@ -55,10 +52,8 @@
                 } else if (email === "Alan@duoc.cl" && password === "Antonia") {
                     // Inicio de sesión exitoso para Alan
                     return true;
-                } else if (email === "Nathalie@duoc.cl" && password === "Prototipo") {
-                    // Inicio de sesión exitoso para Nathalie
-                    return true;
-                } else {
+                }
+                 else {
                     // Usuario o contraseña inválido
                     errorMessage.textContent = "Usuario o contraseña inválido";
                     errorMessage.style.color = "red";
