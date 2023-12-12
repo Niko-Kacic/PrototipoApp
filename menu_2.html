@@ -21,9 +21,9 @@
             <div class="reward-1">
                 <hr>
                 <h4>Actividad Sorpresa</h4>
-                <button>
-                        <img src="./assets/img/correr.png" alt="">
-                </button onclick="openModal('Canjeado: Actividad Sorpresa')">
+                <button onclick="redeemReward('Actividad Sorpresa \t\n Falabella Rewards canjeados: 100')">
+                    <img src="./assets/img/correr.png" alt="">
+                </button>                
                 <div class="text">
                     <p>Canjea este premio para sumergirte en experiencias únicas y emocionantes,
                     desde descuentos especiales hasta accesos exclusivos.</p>
@@ -33,7 +33,7 @@
             </div>
             <div class="reward-6">
                 <h4>Despacho Gratis</h4>
-                <button>
+                <button onclick="redeemReward('Despacho costo cero \t\n Falabella Rewards canjeados: 150')">
                     <img src="./assets/img/camion.png" alt="">
                 </button>
                 <div class="text">
@@ -45,7 +45,7 @@
             </div>
             <div class="reward-2">
                 <h4>Adelantar Fila</h4>
-                <button>
+                <button onclick="redeemReward('Salto de fila a elección \t\n Falabella Rewards canjeados: 200')">
                     <img src="./assets/img/delantero.png" alt="">
                 </button>
                 <div class="text">
@@ -57,7 +57,7 @@
             </div>
             <div class="reward-3">
                 <h4>Pagar hasta 24 cuotas <br> precio contado</h4>
-                <button>
+                <button onclick="redeemReward('Hasta 24 cuotas precio contado \n\t\n Falabella Rewards canjeados: 100')">
                     <img src="./assets/img/archivo-factura-dolar.png" alt="">
                 </button>
                 <div class="text">
@@ -69,7 +69,7 @@
             </div>
             <div class="reward-5">
                 <h4>Multiplicador de Puntos</h4>
-                <button>
+                <button onclick="redeemReward('Multiplicador 1.5 activado \t\n| Falabella Rewards canjeados: 100')">
                     <img src="./assets/img/tablero.png" alt="">
                 </button>
                 <div class="text">
@@ -81,7 +81,7 @@
             </div>
             <div class="reward-4">
                 <h4>Cupon de Descuento</h4>
-                <button>
+                <button onclick="redeemReward2('¡¡¡Falabella Rewards insuficientes.\nPase más tiempo en nuestras tiendas para acumular más Falabella Rewards!!!')">
                     <img src="./assets/img/donar.png" alt="">
                 </button>
                 <div class="text">
@@ -97,21 +97,22 @@
         <p id="modalContent"></p>
         <button onclick="closeModal()">Cerrar</button>
     </div>
-    
-    <div class="overlay" onclick="closeModal()"></div>
-    
+
     <script>
-       
-        function openModal(content) {
-            document.getElementById('modalContent').innerText = content;
+        function openModal(message) {
+            document.getElementById('modalContent').innerHTML = message;
             document.getElementById('myModal').style.display = 'block';
-            document.querySelector('.overlay').style.display = 'block';
         }
-    
-       
+
         function closeModal() {
             document.getElementById('myModal').style.display = 'none';
-            document.querySelector('.overlay').style.display = 'none';
+        }
+
+        function redeemReward(rewardName) {
+            openModal('Canjeado: ' + rewardName);
+        }
+        function redeemReward2(rewardName) {
+            openModal(rewardName);
         }
     </script>
 </body>
